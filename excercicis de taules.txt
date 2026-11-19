@@ -1,0 +1,209 @@
+//21.1
+let arr = [];
+arr[0] = "Hola";
+arr[1] = "Adeu";
+console.log(arr);
+
+//21.2
+let arr = [];
+arr[0] = "Hola";
+arr[1] = "Adeu";
+console.log(arr);
+arr[2] = "Nom";
+console.log(arr);
+arr[1] = ",";
+console.log(arr)
+
+//21.3
+let taula = [23,45,98,73];
+let suma = taula[0] + taula[2]
+console.log(suma)
+taula[6] = suma
+console.log(taula) //[ 23, 45, 98, 73, <2 empty items>, 121 ] no hi ha res a la posició 5
+
+//21.4
+let taula = [];
+let num = Number(prompt("Escriu un numero:"));
+taula[0] = num*2
+taula[1] = num*3
+console.log(taula);
+
+//21.5
+let taula = [];
+let num1 = Number(prompt("Escriu un numero:"));
+let num2 = Number(prompt("Escriu un altre numero:"));
+taula[0] = num1 + num2
+taula[1] = num1 - num2
+taula[2] = num1 * num2
+taula[3] = num1 / num2
+
+//21.6
+let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+console.log(taula.length) // =16
+
+console.log(taula[0], taula[15]);
+
+//*****/
+//21.7
+let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+let i = 0;
+while (i < taula.length) {
+console.log(taula[i]);
+ i++
+}
+
+//21.8
+let taula = [23, 45, 63, 78, 23, 68, 3, 78, 32, 53, 93, 21, 53, 5, 62, 78];
+let suma = 0;
+let i = 0;
+
+while (i < taula.length) {
+    suma += taula[i];    //suma = suma + taula[i];
+    i++;
+}
+console.log(suma);  
+
+//21.9
+let taula = [23, 45, 63, 78, 23, 68, 3, 78, 32, 53, 93, 21, 53, 5, 62, 78];
+let novataula = [];
+let i = 0;
+
+while (i < taula.length) {
+    novataula[i] = taula[i] + 25
+    i++;
+}
+console.log(novataula);
+
+//21.10
+let taula = [23, 45, 63, 78, 23, 68, 3, 78, 32, 53, 93, 21, 53, 5, 62, 78];
+let mitjana = "";
+let suma = 0;
+
+let i = 0;
+while (i < taula.length) {
+    suma += taula[i]
+    i++;
+}
+mitjana = suma / taula.length
+console.log(mitjana);
+
+//21.11
+let taula = [23, 45, 63, 78, 23, 68, 3, 78, 32, 53, 93, 21, 53, 5, 62, 78];
+console.log(taula.length)
+
+
+taula.sort
+console.log(taula[0], taula[15])
+
+//21.12
+let taula = [23, 45, 63, 78, 23, 68, 3, 78, 32, 53, 93, 21, 53, 5, 62, 78];
+let novataula = [];
+let i = 0;
+while (i < taula.length){
+    if (taula[i] % 2 === 0) {
+    novataula.push(taula[i]);
+}
+i++;
+}
+console.log(novataula)
+
+//21.13
+let taula = [23, 45, 63, 78, 23, 68, 3, 78, 32, 53, 93, 21, 53, 5, 62, 78];
+let valor = Number(prompt("Escriu un valor:"));
+console.log(taula.indexOf(valor))
+
+//21.14
+let novataula = [];
+let i = 0;
+let taula1i = prompt("introdueix una taula:");
+let taula2i = prompt("introdueix una altre taula:");
+let taula1 = taula1i.split(',');
+let taula2 = taula2i.split(',');
+
+if (taula1.length === taula2.length) {
+    while (i < taula1.length){
+        novataula[i] = Number(taula1[i]) + Number(taula2[i]);
+        i++;
+    }
+}
+console.log(novataula)
+
+//21.15
+let taulai = prompt("Introdueix una taula:");
+let taula = taulai.split(',');
+let novataula = [];
+let i = taula.length - 1; 
+
+while (i >= 0) {
+    novataula.push(taula[i]);
+    i--;                     
+}
+console.log(novataula);
+
+//21.16
+let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+let num = Number(prompt("Escriu un numero:"));
+let i = 0;
+while (i < taula.length) {
+    if taula[i] === num {
+        console.log("el numero es troba a la taula");
+        break;
+    }else {
+        i++;
+    }
+}
+
+//21.17
+let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+let num = Number(prompt("Escriu un numero:"));
+let i = 0;
+while (i < taula.length) {
+    if taula[i] > num {
+        console.log("hi ha un numero mes gran a la taula");
+        break;
+    }else {
+        i++;
+    }
+}
+
+//21.18
+let taula = [23,45,63,78,23,68,3,78,32,53,93,21,53,5,62,78];
+let i = 0;
+while (i < taula.length; i++) {
+    if taula[i] === taula[0] {
+        console.log("Sí");
+    }else {
+        console.log("No");
+    }
+}
+
+//21.19
+let taula1 = Number(prompt("Escriu una taula:"));
+let taula2 = Number(prompt("Escriu una taula:"));
+let taulau = [];
+let i = 0;
+if (taula1.length === taula2.length){
+    while (i < taula1.length){
+        if (taulau.indexOf % 2 !== 0){
+        taulau[i] = taula1[i];
+        i++;
+        }else if(taulau.indexOf % 2 === 0){
+        taulau[i] = taula2[i];
+        i++;
+    }else{
+        break;
+    }
+}
+    console.log(taulau);
+}
+
+//21.20
+let taula = Number(prompt("Escriu una taula:"));
+let valor = Number(prompt("Escriu un valor:"));
+let novataula = [];
+let i = 0;
+while (i < taula.length){
+    
+}
+21.20.- Fes un programa que, donada una taula i un valor, crei una nova taula sense el valor
+proporcionat.
