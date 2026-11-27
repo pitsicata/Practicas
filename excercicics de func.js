@@ -68,3 +68,16 @@ function calcularNota(notaAC, notaP, notaE){
 console.log (resultat);
 
 //3.5
+let numP5 =0;
+function paraulesTwitter(tuit){
+    t1 = tuit.split(",");
+    t2 = tuit.split(" ");
+    if (t1.length = 5 || t2.length = 5){
+        numP5 ++1;
+    }
+    return numP5;
+}
+console.log("el numero de paraules amb 5 lletres es" + numP5);
+
+
+
